@@ -1,0 +1,35 @@
+Networking Homework 1
+Brieanna Benson
+
+R1. A host and end system both run applications that can send and recieve data packets  
+They both often will store data as well.  What can make an end system and host different 
+is that end systems are first and formost, at the Internet's edge.  They are where the 
+point A and B are for packet transfer.  However, a host can do all of those things and can 
+act intermediately as a point C between point A and B.  Servers and cilents are two types 
+of hosts, one extending from a personal computer, while the latter can be an end point or 
+transfer point.  For example, when a person logs into a Minecraft server, they haave to 
+pass through other servers to reach the playable world.  First, they log into the cilent 
+on their host machine, then that login is processed by the Minecraft Authentation servers, 
+and then again pass through that system automatically when routing to a Minecraft server, 
+hosted by someone else either on their host machine, or an indepedent server.
+
+With that logic in mind, a web server, assuming this means a web page, is an end system.  
+If this web server functions as say, a login portal and a log in is processed, then no, it 
+is a host.
+
+R4. Home Access: DSL, Cable, FTTH, Satellite
+    Enterprise Access: Ethernet, WiFi
+
+R9. DSL: 12 - 24 Mbps down, 1.8 - 2.5 Mbps up, shared via phone lines
+    ftth: Potential rates of 1Gbps+ most offered average via companies is 20Mbps,     
+    dedicated via a splitter system
+    Dial-Up: 56 Kbps, shared via phone line
+    HFC: With one device up to 42.8 Mbps down and 30.7 Mbps up, dedicated via seperate     
+    wire types
+
+R10. Wifi, which uses a special access point maybe from 1 to 10 to possibly 100 meters 
+away, gives all devices a higher rate on par with Ethernet, around 100 Mbps.  3G and LTE 
+are wide access area wireless systems that can reach several 10s of kilometers away.  3G 
+can get speeds up to 1 Mbps, while LTE can get up to 10 Mbps.
+
+P1. 
