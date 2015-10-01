@@ -32,4 +32,15 @@ away, gives all devices a higher rate on par with Ethernet, around 100 Mbps.  3G
 are wide access area wireless systems that can reach several 10s of kilometers away.  3G 
 can get speeds up to 1 Mbps, while LTE can get up to 10 Mbps.
 
-P1. 
+P1. First, the teller machine sends the user's entered card and password for a verify request.  Next, the computer replies back with a granted or denied access.  If denied it stops communication until the next user request is made.  If granted it continues, sending back to the teller machine am option to quarry the balance, withdraw, or exit the teller.  If the yeller sends a balance request, the computer will send back the balance, regardless of value, always an executable option.  If the teller sends a withdraw request the computer can send back two messages.  First, if the balance read is more than the requested withdraw it will deduct that value from the balance and send a request to the teller to dispense money.  However if the balance is less than the withdrawl request the computer will send a message to the teller stating the ammount is over the account's value.  In each case of checking balances or withdrawling, after the messages the computer sends first, it will send another message again to quarry one of the three options.  However if the exit option is decided on and sent to the computer, it will send a message back requesting card and password input again for a new card or customer.
+
+Teller                                              Computer
+    |<-----Card and Password?-----------------------|
+    |-----Entered card and password---------------->|
+    |<-----Verify OK, Balance, Withdrawl, or Exit---|
+    |-----Withdraw 200----------------------------->|
+    |<-----Balance verified, dispense 200-----------|
+    
+P3. While it would be nice to process the data immediately via a circuit switch, if the app is running passively for a long time one might want to consider a packet switch network.  Although there is a risk of queuing delay, with this system, the app can run idlely while other taskes are preformed.  Unless of course, it is assumed the only app available to run is this time based app, a circuit would work just fine.  In general, however, without an ideal, dedicated space, packet switching is the better option.
+
+No, with the timed system and rates all lower than the link capacity together, by the time another packet is sent out, one other should have run through processing.  Even if the apps all sent data out at the same time, the dead air time in which no packets were sent should have cleared out enough space if the rates are consistent and still are less than the link capacity.
