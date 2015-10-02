@@ -1,0 +1,78 @@
+Operating Systems Homework 1
+Brieanna Benson
+
+Review Questions: (Cus writing them down helps)
+1. Processer, where all the calculaters and instructions happen.  I/O Modules, external devices like hard disks, monitors, 
+
+mouse, and keyboard.  System Bus, communication link between all parts, specifically the main memory and processer.  Main 
+
+Memory, where programs and data are loaded to.
+2. Address registers hold where to go in the main memory, whether to a program instruction, or the place where data is 
+
+stored.  The data registers take what's in the address spot and transfer it for instructions and data extraction.
+3. Processer-memory, transfer data from main memory to processer and vice versa.  Processer IO, same as P-M except with IO 
+
+Modules.  Data processing, perform logic or math functions on data. Control, direct what instruction to change to next.
+4. An IO message that will disrupt the processer's normal cycle to perform another set of instructions.
+5. They can either be processed one at a time, disabling other interrupts from processing during another, or nested by 
+
+interrupting another interupt.  Some systems do both in a form of priority hierachy.
+6. Cost per bit, access times, capacity, frequency of accessing main memory.
+7. A fast, small memory between the processer and main memory that holds blocks of data being frequently used, so the 
+
+processer does not have to go through the main memory's cycle so much.
+8. Multiprocessers are almost completely independent aside from the main memory and IO Modules.  Multicore processers have 
+
+multiple processers, but they can share an instruction set fetched from another part of the chip entirely.  
+
+Multiprocessers tend to be on seperate chips or parts and connect via system buses.
+9. Spatial locality refers to data that is stored near the same place in a block, while temporal locality refers to how 
+
+many times a piece of data is called upon in a short amount of time.
+10. Various forms of cache memory setups will make spatial locality less of an issue, and make temporal locality easier to 
+
+process faster, more times.
+
+Problem Questions:
+1. Load AC From Device 5
+   Fetch:                           Execute:
+   001 |3005|>   PC |001|           001 |3005|    PC |002|
+   002 |5940|    AC |0000|          002 |5940|   >AC |0003|
+   003 |7006|   >IR |3005|          003 |7006|    IR |3005|
+
+   960 |0002|    5 |0003|           960 |0002|   <5 |0003|
+                 6 |0000|                         6 |0000|
+
+   ADD Memory at 940
+   Fetch:                           Execute:
+   001 |3005|    PC |002|           001 |3005|    PC |003|
+   002 |5940|>   AC |0003|          002 |5940|  +>AC |0005|
+   003 |7006|   >IR |5940|          003 |7006|    IR |5940|
+
+   960 |0002|    5 |0003|           960 |0002|>   5 |0003|
+                 6 |0000|                         6 |0000|
+
+   Store AC Device 6
+   Fetch:                           Execute:
+   001 |3005|    PC |003|           001 |3005|    PC |004|
+   002 |5940|    AC |0005|          002 |5940|   <AC |0005|
+   003 |7006|>  >IR |7006|          003 |7006|    IR |7006|
+
+   960 |0002|    5 |0003|           960 |0002|    5 |0003|
+                 6 |0000|                        >6 |0005|
+
+2. The MAR grabs the PC's current task to hold and locates the instruction to be sent to the IR.  tHIS ENSURES THAT WHEN 
+
+THE pc CHANGES, THE INSTRUCTION STILL FINISHES ITS EXECUTION STAGE, ASSUMING THE TWO STEP IN THIS MACHINE.  tHE mbr then 
+
+holds data from the location in memory to be used for sad instruction afeter the IR has been pressed.
+
+3. a. 24 bit words, 3 byte words, 2^24 points of access
+   b. If one had a word size larger for the address bus, then the locations for spliting it into the respective pieces 
+
+would require more paralellel cycle steps, which speeds it up.  A 16 bit system would require a nested step system, taking 
+
+longer.
+   c. 24 vit counter, 32 vit IR
+
+4. 
