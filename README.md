@@ -1,2 +1,0 @@
-# sos
-Student Originated Software
