@@ -1,0 +1,33 @@
+Networking Homework 2
+Brieanna Benson
+
+Ch1:
+R19. a. 500 Kbps, 100 Kbps
+     b. 64 seconds, 320 seconds
+
+Ch2:
+R1. FaceboSok TCP, Steam, TCP/IP, Github TCP/IP, Minecraft IP, Discord IP
+R3. The cilent is the one that requests or contacts, while the server waits and then sends data.
+R5. IP Address
+R7. Massive Multiplaer Games
+R9. Transport layer.  The programmer needs to understand how to encrypt data.
+R11. So the connection is reliible with so much traffic.
+R13. Web caching makes it easier to retrieve pages that have already been visited by the user.  It also stores input data 
+
+that is useful for signing into a server.  However, not all of the local copies save time, because for webpages with 
+
+embedded video for example, they need a constant connection to the server anyway, for updates.  Similarly, a webpage may 
+
+need to be retrieved again if it has been modified.
+R15. FTP uses control connections, which go right to another end system directly, rather than through most of the network.
+
+P1. False, True, False, False, True
+P2.   ABOR, ACCT, ALLO, APPE, CDUP, CWD, DELE, HELP, LIST, MKD, MDTM, MODE, NLST, NOOP, PASS, PASV, PORT, PWD, QUIT, RETR, 
+RMD, RNFR, RNTO, SITE, UMASK, IDLE, CHMOD, SIZE, STAT, STOR, STOU, STRU, SYST, TYPE, USER, XCUP, XCWD, XMKD, XPWD, XRMD	
+P3. DNS, TCP, SSL
+P4. gaia.cs.unass.edu/cs453/index.html, 1.1, persistent, rv:1.7.2, Firefox and the formatting may be different on 
+
+different browsers or even through settings
+P5. Yes on Tuesday,  March 7th, 2008, 12:39:45 GMT, Last modified on Saturday, December 10th, 18:27:46 GMT, 3874 bytes, 
+
+yes
