@@ -10,3 +10,10 @@ Address:	10.12.1.10#53
 3. nslookup www.yahoo.com 10.12.1.10
 Server:		10.12.1.10
 Address:	10.12.1.10#53
+4. UDP
+5. Source port: 56792 (56792)  Destination port: domain (53)
+6. 10.12.1.10, yes
+7. It is a standard quarry, Answer RRs: 0
+8. Answer RRs: 3, www.ietf.org: type CNAME, class IN, cname www.ietf.org.cdn.cloudflare-dnssec.net  www.ietf.org.cdn.cloudflare-dnssec.net: type A, class IN, addr 104.20.0.85  www.ietf.org.cdn.cloudflare-dnssec.net: type A, class IN, addr 104.20.1.85
+9. Yes
+10. No
