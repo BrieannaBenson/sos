@@ -13,7 +13,20 @@ Address:	10.12.1.10#53
 4. UDP
 5. Source port: 56792 (56792)  Destination port: domain (53)
 6. 10.12.1.10, yes
-7. It is a standard quarry, Answer RRs: 0
-8. Answer RRs: 3, www.ietf.org: type CNAME, class IN, cname www.ietf.org.cdn.cloudflare-dnssec.net  www.ietf.org.cdn.cloudflare-dnssec.net: type A, class IN, addr 104.20.0.85  www.ietf.org.cdn.cloudflare-dnssec.net: type A, class IN, addr 104.20.1.85
+7. standard, yes
+8. 3, www.ietf.org: type CNAME, class IN, cname www.ietf.org.cdn.cloudflare-dnssec.net  www.ietf.org.cdn.cloudflare-dnssec.net: type A, class IN, addr 104.20.0.85  www.ietf.org.cdn.cloudflare-dnssec.net: type A, class IN, addr 104.20.1.85
 9. Yes
 10. No
+11. Destination port: domain (53), Source port: domain (53)
+12. 10.12.1.10, yes
+13. standard, yes
+14. 4, www.mit.edu: type CNAME, class IN, cname www.mit.edu.edgekey.net  www.mit.edu.edgekey.net: type CNAME, class IN, cname e9566.dscb.akamaiedge.net  e9566.dscb.akamaiedge.net: type AAAA, class IN, addr 2600:1409:a:19a::255e  e9566.dscb.akamaiedge.net: type AAAA, class IN, addr 2600:1409:a:196::255e
+15. See Capture1.png
+16. 10.12.1.10, yes
+17. standard, yes
+18. ak am.net, yes
+19. See Capture2.png
+20. 18.72.0.3, The Korean DNS Server
+21. standard, yes
+22. 1, EVDC2.evergreen.edu: type A, class IN, addr 10.12.1.46
+23. See Capture3.png
