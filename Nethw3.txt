@@ -3,39 +3,26 @@ Brieanna Benson
 
 R19. Yes, it would be e-mail aliased for security benefits.
 R21. No, he might disconnect once recieving all chunks.  Or, if there are other peers, he could be 
-
 recieving chunks from them.  Alice might have chunks Bob already has.
 R24. A normal DHT allows immediate access to any name in the table.  However, that takes up a lot of 
-
 network space.  A circular table only tracks a few local names, and thus takes up less.  However, 
-
 this means one has to go through another name in the table to reach the end desired, and thus can be 
-
 quite slow.
 P18. 
 P19. 
 P21. Yes, it can be told by a DNS cache whether a certain hostname has been visited recently.  Of 
-
 course, this only works if the computers share a single Local DNS server.
 P23. P2P, Client-Server, As a whole, it matters not whether the server, or the peers distribute 
-
 faster.  Whichever set does it the fastest will set the minimum distribution time, and can switch 
-
 back and forth when rates change.  However, in our ideal condition, it will always be one or the 
-
 other.
 P24. P2P, Clientserver, In general, the bits distributed will either travel faster over the peers, or 
-
 the server.  It can only be one of those two.
 P29. Each sum can be a hash key for the address of each peer, giving a finite set to quarry data 
-
 from.
 P31. The UDP cilent will simply keep running, waiting for a server that does not exist.  The TCP 
-
 client will close with nothing completed, leaving a blank message.  With different ports, they will 
-
 simply not connect.
 P32. Yes, because the ports now differ.  They were 12000, now they are 5432.
 P33. Yes, one fails, the others pick up, but it limits the number of connections you can have 
-
 overall.
