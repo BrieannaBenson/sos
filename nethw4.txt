@@ -1,0 +1,26 @@
+Networking Homework 4
+Brieanna Benson
+
+R3. Source Port y, Destination Port x
+R4. To allow a specific rate of transfer required for an app, or to keep direct and 
+connectionless.
+R5. So it can be ACK'd for secure connections.  With UDP there is no handshake so another 
+person could just connect and disrupt the VoIP.  The UDP is also unreliable, connectionless, 
+meaning latency is a problem.
+R7. Yes, it will be demultiplexed and identified from their idividual IP addresses.
+R8. They are being sent through the same socket, but de multiplexed to process in two different 
+parts of the application layer.
+P1. a. 11337 to 23, b. 12345 to 23, c. 23 to 11337, d. 23 to 12345, e. yes, f. no
+P3. 01010011
+    01100110
+    --------
+    10111001
+    01110100
+    --------
+    00101110
+    vvvvvvvv
+    11010001
+It's very possible a 1 bit error can evade detection, but a 2 bit error cannot.
+P5. No, some addition errors can still lead to proper 1's.
+P6. If the sender recieves a zero, there's no way a one can be sent to the reciever or 
+else it will not respond, thus both will be locked in wait.
