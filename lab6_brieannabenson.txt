@@ -1,0 +1,31 @@
+Networking Lab 6
+Brieanna Benson
+
+1. UDP
+2. 
+Client                  Server
+|----Discover: S=68, D=67--->|
+|<---Offer: S=67, D=68-------|
+|----Request: S=68, D=67---->|
+|<---ACK: S=67, D=68---------|
+Yes, they are the same.
+3. Source: ArubaNet_c9:51:a7 (6c:f3:7f:c9:51:a7)
+4. The IP Addresses, both source and destination
+5. Transaction ID: 0x50b201d2, Transaction ID: 0xcc439448, 
+it determines the bootstrapping session for configing new IPs
+6. 
+380	17.453278000	0.0.0.0	255.255.255.255	DHCP	342	DHCP Discover - Transaction ID 0x50b201d2
+406	19.163504000	10.12.1.1	10.14.10.67	DHCP	361	DHCP Offer    - Transaction ID 0x50b201d2
+407	19.163802000	0.0.0.0	255.255.255.255	DHCP	364	DHCP Request  - Transaction ID 0x50b201d2
+408	19.168064000	10.12.1.1	10.14.10.67	DHCP	366	DHCP ACK      - Transaction ID 0x50b201d2
+7. 10.12.1.1
+8. 10.14.10.67
+9. When the relay agent address is the same as your own IP, which it is in the screen.  
+There is no relay for my device either.
+10. It helps determine what subset of IP Addresses can be assigned to you at your network's level, 
+from the DHCP server down to each client.
+11. No, after another OFFER message.
+12. It tells you how long that IP will be yours before it can be dynamically changed.  Mine says 4 days.
+13. It informs the server that the client IP has been changed.  It does not send an acknowledgment, 
+so if the release message was lost, there would be no way to tell if the IP was properly changed.
+14. Yes, they are there to determine if IPs are actually being used.
