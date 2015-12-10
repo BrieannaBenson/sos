@@ -1,0 +1,25 @@
+Networking Homework 7
+Brieanna Benson
+
+R7. Because a deep copy would imply only one or the other has access to it at a time.  All input ports 
+have the most recent modification to their local table so they can do back and forth routing.
+R16. Assuming standard 20 byte header messages, half of the packet will be header and half will be 
+data.
+P3. The VC table has a a column for incoming and outgoing interfaces, as well as the VC session ID.  
+Datagram tables only bother with forwarding based on IP packets, through the first few differing sets 
+of bits.
+P4. 
+P7. No, Yes, No
+P10. 
+Prefix          |Interface
+----------------|---------
+1110000000      |    0
+1110000001000000|    1
+111000          }    2
+111             |    3
+0               |    3
+5 entries were required, even if technically this is four distinct possiblities.  
+You could just say the final one covers anything that starts with zero or in general doesn't fit, 
+0 handles the 111 starting prefixes that bleed into the second bytefor anything that doesn't have 1 
+in the tenth down bit.  For those that do, it must be divided into two catogoires,, one with the last 
+two byte' range, and the other guiding what is left up until the 6th bit needs to be flipped.  
