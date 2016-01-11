@@ -1,0 +1,59 @@
+Operating Systems Homework 8
+Brieanna Benson
+
+Review Questions:
+1. All the pages must be in main memory for a process to run in simple paging, while virtual paging can store some pages in secondry memory.
+2. When more time is used swapping than executing instructions.
+3. It helps determine what pages or segments are most important to use, and how to easily swap data without lossing it.
+4. Page number, proccess identifier, control bits, chain pointer
+5. Store recently used pages like a cache, incase the ages are related to the running process.
+6. Assoiative paging checks to make sure a certain page number entry can exist before grabbing it.
+7. Resident set management makes an allocation for a chunk of a process to import pages related to that process.  Replacement policy simply grabs the pages that are needed at that moment in time when main memory is full.
+8. First in first out funtions on a queue, and because of its set up, it is rond robin, almost like a clock or circular queue in the second policy.
+9. Giving ample size for dynamic pdates
+10. Because the global policy wants to look at every page, not just a workign set.
+11. Working sets do not have to be related to the same process.
+12. Precleaning simply writes out modified pages before their frame needs replacing while demand cleaning only does so once the frame is needed.
+
+Problem Questions:
+1. 1, 3, 5
+2. Once every 1,024th byte, modify the i loop for 14 of size, once every 4 pages
+5. 7, 4
+6. 
+LRU
+     1   0   2   2   1   7   6   7   0   1   2   0   3   0   4   5   1   5   2   4   5   6   7   6
+---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+ 1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   4   4   4   4   4   4   4   4   4   4
+ 2       0   0   0   0   0   6   6   6   6   2   2   2   2   2   5   5   5   5   5   5   5   5   5
+ 3           2   2   2   2   2   2   0   0   0   0   0   0   0   0   0   0   2   2   2   2   7   7
+ 4                       7   7   7   7   7   7   7   3   3   3   3   1   1   1   1   1   6   6   6
+                             F       F       F       F       F   F   F       F           F   F
+     7   2   4   2   7   3   3   2   3
+---|---|---|---|---|---|---|---|---|---|
+ 1   4   2   2   2   2   2   2   2   2
+ 2   5   5   4   4   4   4   4   4   4
+ 3   7   7   7   7   7   7   7   7   7
+ 4   6   6   6   6   6   3   3   3   3
+         F   F           F
+13/33
+
+FIFO
+     1   0   2   2   1   7   6   7   0   1   2   0   3   0   4   5   1   5   2   4   5   6   7   6
+---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+ 1   1   1   1   1   1   1   6   6   6   6   6   6   6   6   4   4   4   4   4   4   4   6   6   6
+ 2       0   0   0   0   0   0   0   0   1   1   1   1   1   1   5   5   5   5   5   5   5   7   7
+ 3           2   2   2   2   2   2   2   2   2   0   0   0   0   0   1   1   1   1   1   1   1   1
+ 4                       7   7   7   7   7   7   7   3   3   3   3   3   3   2   2   2   2   2   2
+                             F           F       F   F       F   F   F       F           F   F
+     7   2   4   2   7   3   3   2   3
+---|---|---|---|---|---|---|---|---|---|
+ 1   6   6   6   6   6   6   6   2   2
+ 2   7   7   7   7   7   7   7   7   7
+ 3   1   1   4   4   4   4   4   4   4
+ 4   2   2   2   2   2   3   3   3   3
+             F           F       F
+13/33
+
+In this particular case, they hold the same effectiveness.
+11. 400ns, .85(220) + .15(640) = 283, it makes a refence restart and place a page into the TLB before a normal operation
+18. 
