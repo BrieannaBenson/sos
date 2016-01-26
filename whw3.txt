@@ -1,0 +1,14 @@
+Networking Homework 3
+BrieannaBenson
+
+R14. False
+R15. Digital Signature, because it takes Alice's private key and anyone can 
+use her public key to get the message back.
+R19. She uses a private key based digital signature, instead of a MAC.
+R20. False
+R21. So the nonces cannot be replayed.
+P22. False, False, True, False
+P23. No, because R2 is waiting for a later sequence number, so that packet 
+will be ignored.
+P25. 
+P26. 
