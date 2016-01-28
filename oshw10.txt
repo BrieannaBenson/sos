@@ -1,0 +1,31 @@
+Operating Systems Homework 3
+Brieanna Benson
+
+1. 
+0              50            100            150            200            250
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|xx|  |xx|  |xx|  |xx|  |xx|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |A
+|xx|  |  |  |  |xx|  |  |  |  |xx|  |  |  |  |xx|  |  |  |  |xx|  |  |  |  |B
+|xx|x |  |  |  |xx|x |  |  |  |xx|x |  |  |  |xx|x |  |  |  |xx|x |  |  |  |C
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|A1|B1|A2|C1|A3|B2|A4|C2|A5|C2|B3|C3|X |  |  |B4|C4|X |  |  |B5|C5|X |  |  |A has priority
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|B1|C1|X |  |A3|B2|A4|C2|X |A5|B3|C3|X |  |  |B4|C4|X |  |  |B5|C5|X |  |  |B has priority
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|C1|X |A2|B1|A3|C2|X |A4|B2|A5|C3|X |B3|  |  |C4|X |B4|  |  |C5|X |B5|  |  |C has priority
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|A1|B1|A2|C1|X |A3|B2|A4|C2|X |B3|C3|X |  |  |B4|C4|X |  |  |B5|C5|X |  |  |Next deadline
+
+2. 
+0              50            100            150
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |AA|AA|  |CC|CC|EE|EE|  |  |  |  |  |  |  |Earliest Deadline
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |BB|BB|CC|CC|EE|EE|AA|AA|  |  |  |  |  |Earliest with no idle times
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |AA|AA|  |CC|CC|DD|DD|  |  |  |  |  |  |  |FCFS
+
+3. 
+a. deadline - processer 
+b. it means it was just completed
+c. it means the task cannot meet its original deadline
