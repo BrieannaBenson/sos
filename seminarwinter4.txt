@@ -1,0 +1,40 @@
+Seminar Notes Week 4
+Brieanna Benson
+
+1.  I know that Microsoft Word's headers are flexable, visually.  
+I am visually impaired so being able to adjust the rich text and 
+design appealing formats certainly aids my ability to see.  
+However, it was not apparent whether or not audio functions exist 
+for those that cannot see at all.
+
+2. Most certainly!  Without accessibility, how will those in need 
+be able to navigate and find what they want out of a web page or 
+application.  Everything must be organized in a clear fashion, 
+with clear, simple instructions of how to obtain certain access 
+privilages.  Even with accessibility, one still has to consider 
+whether the person in question is actually willing to be serious 
+about their needs.  A level of restrictiveness must remain for 
+security purposes, but it can't be too unreachable.  What effort 
+goes in, must come out almost the same.
+
+3. The legal requirments are vague only because they vary so much 
+from place to place, organization to organization, and government 
+department to department.  For example, the definition of a comfort 
+animal was a point of contension in part of the first paper.  ADA 
+requires "service" animals to be trained, whereas a comfort animal 
+is far from.  From a glance, to a normal reader, these technicalities 
+are vague at best.  They have been defined, but not in a clear and 
+accessable way for the average Joe to interpret.  For people with 
+certain learning disabilities, this vagueness is compounded to 
+large confusion without easily accessable sources.
+
+4. When a service page is not accessible, it is as if the person in 
+need didn't have a resource at all.  If the service rules and benefits
+are vague, indirect, or simply not noticable on the page's left hand bar 
+list for example, the disabled person will not understand their rights 
+or what accomedations they qualify for.  Simple priorities like alternate
+forms of information display, whether a mouse has to click a precise spot, 
+and labels are just a few accessibility priorities to pay attention to
+when designing a web page or virtual source.
+
+5. 
